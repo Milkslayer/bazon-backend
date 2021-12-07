@@ -1,4 +1,4 @@
-using Bazon.Backend.Api.Models;
+using Bazon.Backend.Api.DbModels;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
