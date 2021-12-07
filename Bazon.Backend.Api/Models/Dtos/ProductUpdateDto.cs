@@ -1,6 +1,6 @@
 ﻿namespace Bazon.Backend.Api.Models;
 
-public class User
+public class ProductUpdateDto
 {
     
 }
