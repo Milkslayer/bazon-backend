@@ -1,4 +1,4 @@
-﻿namespace Bazon.Backend.Api.Models;
+﻿namespace Bazon.Backend.Api.DbModels;
 
 public class GroupUser
 {

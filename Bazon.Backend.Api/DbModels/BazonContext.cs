@@ -1,7 +1,8 @@
 ﻿using System.Text;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
-namespace Bazon.Backend.Api.Models;
+namespace Bazon.Backend.Api.DbModels;
 
 public class BazonContext : DbContext
 {
@@ -36,7 +37,7 @@ public class BazonContext : DbContext
     {
         modelBuilder.Entity<User>(entity =>
         {
-            entity.ToTable("user");
+            RelationalEntityTypeBuilderExtensions.ToTable((EntityTypeBuilder) entity, "user");
             entity.HasMany(u => u.Addresses);
         });
         
